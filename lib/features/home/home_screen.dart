@@ -40,17 +40,26 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Alarm',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
+            icon: Icon(Icons.access_time),
             label: 'Clock',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.hourglass_bottom),
+            label: 'Timer',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.timer),
+            label: 'Stopwatch',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bed),
+            label: 'Bedtime',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.black,
       ),
     );
   }

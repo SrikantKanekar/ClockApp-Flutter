@@ -54,12 +54,14 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.bed),
             label: 'Bedtime',
+            backgroundColor: Colors.red
           ),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.black,
+        backgroundColor: Colors.red,
       ),
     );
   }

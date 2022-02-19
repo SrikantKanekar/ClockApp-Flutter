@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'alarm/widget/alarm_page.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -11,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Alarm'),
+    AlarmPage(),
     Text('Clock'),
     Text('Timer'),
     Text('Stopwatch'),
@@ -28,7 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Clock'),
+        elevation: 0,
+        title: const Text('Alarm'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),

@@ -1,3 +1,4 @@
+import 'package:clock_app/features/home/clock/widget/clock_page.dart';
 import 'package:flutter/material.dart';
 
 import 'alarm/widget/alarm_page.dart';
@@ -12,12 +13,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _widgetOptions = <Widget>[
-    AlarmPage(),
-    Text('Clock'),
-    Text('Timer'),
-    Text('Stopwatch'),
-    Text('Bedtime'),
+  static final List<Widget> _widgetOptions = <Widget>[
+    const AlarmPage(),
+    ClockPage(),
+    const Text('Timer'),
+    const Text('Stopwatch'),
+    const Text('Bedtime'),
   ];
 
   void _onItemTapped(int index) {

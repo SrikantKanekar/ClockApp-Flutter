@@ -1,4 +1,5 @@
 import 'package:clock_app/features/home/clock/widget/clock_page.dart';
+import 'package:clock_app/features/home/timer/widget/timer_page.dart';
 import 'package:flutter/material.dart';
 
 import 'alarm/widget/alarm_page.dart';
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   static final List<Widget> _widgetOptions = <Widget>[
     const AlarmPage(),
     ClockPage(),
-    const Text('Timer'),
+    TimerPage(),
     const Text('Stopwatch'),
     const Text('Bedtime'),
   ];
